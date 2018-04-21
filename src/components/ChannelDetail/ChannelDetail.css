@@ -1,0 +1,16 @@
+.channel-detail {
+  display: flex;
+  padding: 0 100px;
+  flex-direction: column;
+}
+
+.channel-content {
+  padding: 0 0 0 30px;
+}
+
+.loading-detail {
+  text-align: center;
+  flex: 1;
+  font-style: italic;
+  font-size: 20px;
+}

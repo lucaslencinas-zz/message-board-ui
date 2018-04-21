@@ -1,0 +1,22 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+  .card-wrapper {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .card-wrapper {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 2299px) {
+  .card-wrapper {
+    width: 33%;
+  }
+}

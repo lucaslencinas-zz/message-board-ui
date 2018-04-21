@@ -1,0 +1,14 @@
+.navbar {
+  display: flex;
+  background-color: #dcdcdc;
+}
+
+.navbar:hover {
+  color: grey;
+}
+
+.navbar-link {
+  display: flex;
+  flex: 1;
+  padding: 10px 10%;
+}
