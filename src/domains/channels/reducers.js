@@ -46,7 +46,7 @@ export default function channelsReducer(state = initialState, action) {
         data: {
           ...state.data,
           [action.channel.id]:
-            { ...action.channel, messages: channel.messages.concat([action.createdMessage]) }
+            { ...action.channel, messages: channel.messages.concat([action.message]) }
         }
       };
 
