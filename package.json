@@ -2,6 +2,7 @@
   "name": "message-board-react-redux",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://0.0.0.0:3001/",
   "dependencies": {
     "chai": "^4.1.2",
     "enzyme": "^3.3.0",

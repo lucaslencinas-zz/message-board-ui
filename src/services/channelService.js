@@ -1,35 +1,19 @@
-import { format } from 'url';
-
-const serviceUri = {
-  protocol: 'http',
-  host: '0.0.0.0:3001'
-};
-
 export function list() {
-  const url = format({
-    ...serviceUri,
-    pathname: '/api/channels'
-  });
+  const url = '/api/channels';
 
   return fetch(url)
     .then((response) => response.json());
 }
 
 export function get(channelId) {
-  const url = format({
-    ...serviceUri,
-    pathname: `/api/channels/${channelId}`
-  });
+  const url = `/api/channels/${channelId}`;
 
   return fetch(url)
     .then((response) => response.json(response));
 }
 
 export function createMessage(channelId, message) {
-  const url = format({
-    ...serviceUri,
-    pathname: `/api/channels/${channelId}/messages`
-  });
+  const url = `/api/channels/${channelId}/messages`;
   console.log(url);
 
   return fetch(url, {
@@ -41,10 +25,7 @@ export function createMessage(channelId, message) {
 }
 
 export function removeMessage(channelId, messageId) {
-  const url = format({
-    ...serviceUri,
-    pathname: `/api/channels/${channelId}/messages/${messageId}`
-  });
+  const url = `/api/channels/${channelId}/messages/${messageId}`;
 
   return fetch(url);
 }
